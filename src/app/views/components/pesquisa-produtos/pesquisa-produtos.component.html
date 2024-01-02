@@ -1,0 +1,16 @@
+<div class="container my-4">
+  <h2 class="mb-4">Resultados da Pesquisa</h2>
+  <ul class="list-group">
+    <li *ngFor="let produto of resultados" class="list-group-item">
+      <a [routerLink]="'/detalhes-produto/' + produto.id" class="d-flex align-items-center text-dark text-decoration-none">
+        <img [src]="produto.thumbnail" alt="{{ produto.title }}" class="me-3" style="max-width: 100px; height: auto;">
+
+        <div>
+          <h5 class="mb-1">{{ produto.title }}</h5>
+          <p class="mb-1">{{ produto.description }}</p>
+          <span class="badge bg-primary rounded-pill">{{ produto.price | currencyBr }}</span>
+        </div>
+      </a>
+    </li>
+  </ul>
+</div>

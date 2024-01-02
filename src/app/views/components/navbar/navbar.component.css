@@ -1,0 +1,67 @@
+*{
+ background-color: var(--cor-nav) !important;
+}
+
+.navbar-logo {
+  width: 190px;  /* Defina o tamanho desejado */
+  height: auto; /* Isso garantirá que a proporção da imagem seja mantida */
+}
+
+.ri-shopping-cart-line, .ri-shopping-bag-3-line {
+  font-size: 34px; /* Defina o tamanho desejado */
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+}
+
+.nav-item{
+  padding: 30px;
+}
+
+.ri-shopping-cart-line {
+  color: var(--cor-fundo);
+}
+
+.ri-shopping-cart-line:hover {
+  color: var(--cor-two);
+}
+
+.ri-shopping-bag-3-line{
+  color: var(--cor-fundo);
+}
+
+.ri-shopping-bag-3-line:hover {
+  color: var(--cor-two);
+}
+
+.navbar-nav button {
+  border: none; /* Remove a borda dos botões */
+  background-color: transparent; /* Define um fundo transparente para o botão */
+  cursor: pointer; /* Altera o cursor para indicar que é um botão clicável */
+}
+
+/* Estilizando o campo de pesquisa */
+.form-control {
+  border-radius: 20px; /* Bordas arredondadas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  padding: 12px 20px; /* Espaçamento interno */
+  background-color: var(--cor-fundo) !important;
+  border-color: var(--cor-two);
+}
+
+/* Estilizando o botão de pesquisa */
+.btn-outline-success {
+  border: none;
+  font-size: 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+  color: var(--cor-fundo);
+}
+
+.btn-outline-success:hover{
+  color: var(--cor-two);
+}
+

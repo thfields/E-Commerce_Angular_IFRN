@@ -1,0 +1,62 @@
+.container {
+  min-height: 65vh;
+  background-color: var(--cor-fundo);
+  border-radius: 20px;
+}
+
+.carousel-image {
+  object-fit: contain;
+  height: 500px;
+  width: 100%;
+}
+
+.carousel-inner {
+  height: 500px;
+  overflow: hidden;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  color: var(--cor-nav);
+  background-color: var(--cor-nav);
+  border-radius: 30px;
+}
+
+.descricao {
+  padding: 20px;
+}
+
+.detals {
+  display: flex;
+}
+
+.detals h6 {
+  padding: 5px;
+}
+
+.preco {
+  color: green;
+}
+
+.btn-primary{
+  background-color: var(--cor-nav);
+  border-color: var(--cor-two);
+}
+
+.btn-primary:hover{
+  background-color: var(--cor-two);
+  border-color: var(--cor-nav);
+}
+
+.botao {
+  display: flex;
+  flex-direction: row; /* Alterado para dispor os botões horizontalmente */
+  justify-content: left; /* Centraliza os botões horizontalmente */
+}
+
+.botao button {
+  margin-right: 15px; /* Adiciona espaço entre os botões */
+}
+
+.botao button:last-child {
+  margin-right: 0; /* Remove a margem do último botão para evitar espaço extra */
+}

@@ -1,0 +1,21 @@
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-3 mb-4" *ngFor="let prod of produtos">
+      <div id="cards" class="card shadow-sm h-100 card-hover">
+        <img [src]="prod.thumbnail" alt="{{ prod.title }}" class="bd-placeholder-img card-img-top img-fluid">
+        <div class="card-body d-flex flex-column justify-content-between">
+          <div>
+            <h4 class="card-title">{{ prod.title }}</h4>
+            <h5>⭐ {{ prod.rating }}</h5>
+            <h3>{{ prod.price | currencyBr }}</h3>
+          </div>
+          <div class="d-flex justify-content-around">
+            <button id="botao" (click)="adicionarAoCarrinho(prod)" class="btn btn-primary mt-2"><i class="ri-shopping-cart-line"></i></button>
+            <button id="botao" (click)="verDetalhes(prod)" class="btn btn-primary mt-2">Ver mais</button>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

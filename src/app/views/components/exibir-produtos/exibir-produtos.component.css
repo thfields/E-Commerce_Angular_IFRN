@@ -1,0 +1,35 @@
+/* exibir-produtos.component.css */
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Ajuste a altura conforme necessário */
+  object-fit: cover; /* Isso garante que a imagem cubra a área especificada sem distorção */
+}
+
+.card-hover {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: scale(1.05) translateY(-10px); /* Aumenta o tamanho em 5% e eleva 10px */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra mais profunda para destacar a elevação */
+}
+
+.cards{
+  background-color: var(--cor-fundo);
+}
+
+.btn{
+  background-color: var(--cor-nav);
+  border-color: var(--cor-two);
+  border-radius: 20px;
+
+}
+
+.btn:hover{
+  background-color: var(--cor-two);
+  border-color: var(--cor-two);
+}
+
+h3{
+  color: green;
+}

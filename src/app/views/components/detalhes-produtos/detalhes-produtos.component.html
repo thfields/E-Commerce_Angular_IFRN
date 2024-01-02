@@ -1,0 +1,48 @@
+<div class="container d-flex justify-content-center align-items-center my-5">
+  <div class="row">
+    <!-- Carrossel -->
+    <div class="col-md-6">
+      <div *ngIf="produtoDetalhado">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div *ngFor="let image of produtoDetalhado.images; let i = index" class="carousel-item" [class.active]="i === 0">
+              <img [src]="image" class="d-block img-fluid carousel-image" alt="Image {{ i + 1 }}">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+        </div>
+      </div>
+      <div *ngIf="!produtoDetalhado" class="mt-3 alert alert-info">
+        Carregando detalhes do produto...
+      </div>
+    </div>
+
+    <!-- Detalhes do Produto -->
+    <div class="col-md-6">
+      <div *ngIf="produtoDetalhado" class="descricao">
+        <h2>{{ produtoDetalhado.title }}</h2>
+        <h5>⭐ {{ produtoDetalhado.rating }}</h5>
+        <span class="detals">
+          <h6><b>{{ produtoDetalhado.brand }}</b></h6>
+          <h6>{{ produtoDetalhado.category }}</h6>
+        </span>
+        <p class="my-2 fs-4">{{ produtoDetalhado.description }}</p>
+        <h3 class="preco">{{ produtoDetalhado.price | currencyBr }}</h3>
+        <div class="botao">
+          <button (click)="confirmarCompra(confirmacaoCompra)" class="btn btn-success mt-2">Comprar</button>
+          <button (click)="adicionarAoCarrinho(produtoDetalhado)" class="btn btn-primary mt-2"><i class="ri-shopping-cart-line"></i></button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <ng-template #confirmacaoCompra>
+    <app-confirmacao-compra-modal></app-confirmacao-compra-modal>
+  </ng-template>
+</div>

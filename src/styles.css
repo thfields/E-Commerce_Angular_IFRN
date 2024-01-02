@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Adicione isso ao seu styles.css */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+:root {
+  --cor-fundo: #FFFFFF;
+  --cor-nav: #531ED8;
+  --cor-two: #895BFF;  /* Exemplo de uma cor primária */
+  --background: linear-gradient(to bottom right, #D4D4D4, #C4C4C4, #AEAEAE);
+  --espacamento-padrao: 1rem;  /* Exemplo de espaçamento padrão */
+  --fonte-padrao: Arial, sans-serif; /* Exemplo de fonte padrão */
+}
+
+
+body{
+  background-image: var(--background);
+}

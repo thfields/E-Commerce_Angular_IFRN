@@ -1,0 +1,33 @@
+<div class="container">
+  <h1 class="mt-3 mb-5">Produtos Comprados</h1>
+
+  <div *ngIf="produtosComprados.length > 0" class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Produto</th>
+          <th>Quantidade</th>
+          <th>Preço Unitário</th>
+          <th>Subtotal</th>
+          <th>Data da Compra</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of produtosComprados; let i = index">
+          <td>
+            <img [src]="item.produto.thumbnail" alt="{{ item.produto.title }}" class="img-thumbnail produto-image" />
+            {{ item.produto.title }}
+          </td>
+          <td>{{ item.quantidade }}</td>
+          <td>{{ item.produto.price | currencyBr }}</td>
+          <td>{{ item.subtotal | currencyBr }}</td>
+          <td>{{ item.dataCompra | date: 'dd/MM/yyyy HH:mm:ss' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div *ngIf="produtosComprados.length === 0;" class="alert alert-info">
+    Nenhum produto foi comprado ainda.
+  </div>
+</div>

@@ -1,0 +1,31 @@
+footer{
+  background-color: var(--cor-nav);
+}
+
+.list-unstyled{
+  display: flex;
+}
+
+.footer-link{
+  padding: 10px;
+  color: var(--cor-fundo);
+  text-decoration: none;
+}
+
+.footer-link:hover{
+  color: var(--cor-two);
+}
+
+.row{
+  align-items: center;
+}
+
+p:hover{
+  color: var(--cor-two);
+}
+
+#alunos{
+  align-items: center;
+}
+
+

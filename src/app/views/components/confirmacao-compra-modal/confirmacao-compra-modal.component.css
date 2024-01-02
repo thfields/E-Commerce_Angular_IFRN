@@ -1,0 +1,24 @@
+div{
+  color: var(--cor-fundo);
+  background-color: var(--cor-two);
+}
+
+.close{
+  background-color: red;
+  color: var(--cor-fundo);
+}
+
+.modal-header,
+.modal-body,
+.modal-footer {
+  border: none;
+}
+
+.btn-primary{
+  background-color: green;
+  border-color: green;
+}
+
+.btn-primary:hover{
+  background-color: rgb(74, 158, 74);
+}

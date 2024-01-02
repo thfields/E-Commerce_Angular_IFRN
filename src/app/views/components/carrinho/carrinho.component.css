@@ -1,0 +1,24 @@
+.produto-image {
+  max-width: 80px; /* Defina o tamanho desejado */
+  height: auto;
+}
+
+.align-items-center {
+  display: flex;
+  align-items: center;
+}
+
+th{
+  background-color: var(--cor-nav);
+  color: var(--cor-fundo);
+}
+
+.table-condensed > tbody > tr > td {
+  padding: 8px;
+  background-color: var(--cor-two);
+  color: var(--cor-fundo);
+}
+
+.container {
+  min-height: 65vh;
+}

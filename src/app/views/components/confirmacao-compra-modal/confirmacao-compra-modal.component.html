@@ -1,0 +1,13 @@
+<div class="modal-header">
+  <h4 class="modal-title">Confirmar Compra</h4>
+  <button type="button" class="close" aria-label="Fechar" (click)="fecharModal()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <p>{{ mensagemConfirmacao }}</p>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-primary" (click)="finalizarCompraNoCarrinho()">Sim</button>
+  <button type="button" class="btn btn-danger" (click)="fecharModal()">Não</button>
+</div>

@@ -1,0 +1,29 @@
+a {
+  transition: background-color 0.3s ease;
+}
+
+a:hover {
+  background-color: var(--cor-two); /* Adiciona um fundo ao passar o mouse sobre o link */
+}
+
+.container {
+  min-height: 65vh;
+}
+
+.list-group-item {
+  border: none;
+}
+
+.list-group-item:hover {
+  background-color: var(--cor-two); /* Adiciona um fundo ao passar o mouse sobre o item da lista */
+}
+
+img {
+  border-radius: 4px;
+}
+
+.badge {
+  margin-top: 10px;
+  background-color: green !important;
+  border-color: green;
+}
